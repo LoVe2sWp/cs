@@ -1,0 +1,24 @@
+{
+  "name": "dsh-benchmark-plugin",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DSH 性能基准测试插件：鲁大师式 AI 工具跑分（准确性/计算速度/文件处理/资源效率）",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "src/",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2"
+    }
+  },
+  "keywords": ["openclaw", "dsh", "benchmark", "performance", "deepseek"],
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

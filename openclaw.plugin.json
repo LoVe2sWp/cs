@@ -1,0 +1,30 @@
+{
+  "id": "dsh-benchmark",
+  "name": "DSH 性能基准",
+  "description": "鲁大师式 AI 工具性能测试：准确性 / 计算速度 / 文件处理 / 资源效率，满分 10000",
+  "version": "1.0.0",
+  "contracts": {
+    "tools": ["dsh_benchmark"]
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "被测模型的 API Key；留空则读取环境变量 DEEPSEEK_API_KEY"
+      },
+      "baseUrl": {
+        "type": "string",
+        "description": "OpenAI 兼容的 chat/completions 端点"
+      },
+      "model": {
+        "type": "string",
+        "description": "默认模型名"
+      }
+    }
+  }
+}
